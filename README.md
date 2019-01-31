@@ -21,8 +21,7 @@ This project demonstrates the visualization of high-frequency data streams (50Hz
 	+ this is useful for optimization purposes, especially in high-frequency real-time streams, where you 	can	lower the chart render calls in order to lessen the CPU load.
 
 ### Server
-+ publishes and subscribes to MQTT topic (e.g. **voltage**)
-+ forwards the received messages to the client using websockets
++ pushes ticks to connected clients using websockets
 
 ## Getting Started
 
@@ -32,9 +31,6 @@ Before you run the client, be sure you have these downloaded/installed on your m
 
 + node.js
 + npm
-+ [mqtt-realtime-chart-server](https://github.com/NickJokic/mqtt-realtime-chart-server)
-+ [Moquette (MQTT broker)](https://github.com/andsel/moquette) (or any other MQTT broker that listens on port 1883)
-    + If using Moquette, be sure to have Java JDK installed (tested with JDK 8)
 
 
 ### Installing
